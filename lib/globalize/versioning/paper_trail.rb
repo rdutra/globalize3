@@ -18,7 +18,7 @@ ActiveRecord::Base.class_eval do
       has_paper_trail_without_globalize(*args)
       include Globalize::Versioning::PaperTrail
     end
-    alias_method_chain :has_paper_trail, :globalize
+    alias_method_chain :versioned, :globalize
   end
 end
 
