@@ -1,4 +1,4 @@
-require 'vestal_versions'
+require 'paper_trail'
 
 module Globalize
   module Versioning
@@ -18,7 +18,7 @@ ActiveRecord::Base.class_eval do
       has_paper_trail_without_globalize(*args)
       include Globalize::Versioning::PaperTrail
     end
-    alias_method_chain :versioned, :globalize
+    alias_method_chain :has_paper_trail, :globalize
   end
 end
 

@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     s.add_dependency 'activemodel', '>= 3.0.0'
   end
   s.add_dependency 'paper_trail',  '~> 2'
+  s.add_dependency 'vestal_versions'
 
   s.add_development_dependency 'database_cleaner', '~> 0.6.0'
   s.add_development_dependency 'mocha'
